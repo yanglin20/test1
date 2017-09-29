@@ -38,7 +38,8 @@
         var flag = true;
         var timerId = null;
          var bfscrolltop = document.body.scrollTop;
-        $('.bottom-commit input').focus(function() {   
+        $('.bottom-commit p').click(function() { 
+        console.log(3);  
             $('.bottom_layer').hide();
             $('#zhanwei').hide();
            
@@ -217,7 +218,8 @@
    
     <div class="bottom_layer">
         <div class="bottom-commit">
-            <input type="text" placeholder="写评论">
+            <!-- <input type="text" placeholder="写评论"> -->
+            <p class="input">写评论</p>
             <i></i>
         </div>
         <div class="bottom_layer-right">
