@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="telephone=no" name="format-detection">
+    <meta content="email=no" name="format-detection">
+    <meta name="wap-font-scale" content="no">
+    <title>详情页</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index1.css">
+    <script type="text/javascript">
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+            resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+            recalc = function() {
+                var clientWidth = docEl.clientWidth;
+                if (!clientWidth) return;
+                if (clientWidth <= 320) {
+                    docEl.style.fontSize = '42.666666666px';
+                } else if (clientWidth >= 750) {
+                    docEl.style.fontSize = '100px';
+                } else {
+                    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                }
+            };
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    </script>
+    <script src="js/jQuery-2.1.4.min.js"></script>
+    <script>
+    $(function() {
+        var flag = true;
+        var timerId = null;
+         var bfscrolltop = document.body.scrollTop;
+        $('.bottom-commit input').focus(function() {   
+            $('.bottom_layer').hide();
+            $('#zhanwei').hide();
+           
+
+            
+            $('.commit-bg1').slideDown();
+            
+            
+      
+            
+        });
+
+
+        // $('.detail').bind('touchstart', function() {
+        //     if ($('.commit-bg').css('display') != 'none') {
+        //         $('.bottom_layer').show();
+        //         $('#zhanwei').show();
+    
+        //         $('.commit-bg textarea').blur();
+        //         $('.commit-bg').hide();
+        //     }
+
+        // })
+
+        // $('.commit-bg button').click(function() {
+        //     $('.bottom_layer').show();
+        //     $('#zhanwei').show();
+           
+        //     $('.commit-bg').hide();
+     
+        // })
+
+        
+
+    })
+    </script>
+</head>
+
+<body>
+    <div class="detail">
+        <div class="w700">
+            <h3>又萌又娇俏——LV迷你双肩包鉴定攻略你要不要！</h3>
+            <div class="time-see">
+                <li id="Lab_CreateTime">2017-08-10 17:48:49</li>
+                <li id="Lab_ViewCount"><span></span><span>316</span></li>
+            </div>
+        </div>
+        <!-- detail_bg -->
+        <div class="datail-bg">
+            <div></div>
+            <div>值哆少编辑团</div>
+            <div><span id="Lab_CreateUser">哆姐</span></div>
+            <div></div>
+        </div>
+        <!-- 相关阅读 -->
+        <div class="articles ">
+            <h2>
+                <p></p>
+                相关阅读
+            </h2>
+            <div class="w700">
+                <div class="list-layout">
+                    <div class="list-layout-left">
+                        <p class="title">#"瑞"不可挡#没人能拥有百达翡丽，只不过为下一代珍藏</p>
+                        <p class="time"><span></span><span>2017-05-23</span></p>
+                    </div>
+                    <div class="list-layout-right">
+                        <img src="images/pic.png" alt="">
+                    </div>
+                </div>
+                <div class="list-layout">
+                    <div class="list-layout-left">
+                        <p class="title">#"瑞"不可挡#没人能拥有百达翡丽，只不过为下一代珍藏</p>
+                        <p class="time"><span></span><span>2017-05-23</span></p>
+                    </div>
+                    <div class="list-layout-right">
+                        <img src="images/pic.png" alt="">
+                    </div>
+                </div>
+                <div class="list-layout">
+                    <div class="list-layout-left">
+                        <p class="title">#"瑞"不可挡#没人能拥有百达翡丽，只不过为下一代珍藏</p>
+                        <p class="time"><span></span><span>2017-05-23</span></p>
+                    </div>
+                    <div class="list-layout-right">
+                        <img src="images/pic.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="articles-border"></div>
+        <!-- 大家说 -->
+        <div class="all-say">
+            <h2>
+                <p></p>
+                大家说 (<span id="LabReplyCount">3</span>)
+            </h2>
+            <div class="replay-list">
+                <div class="replay-list-item">
+                    <div class="replay-list-top">
+                        <img src="images/person.png" alt="">
+                        <div class="replay-xinxi">
+                            <div>
+                                <p><span>众泰集团董事长</span></p>
+                                <p>2017-08-11 15:10:05 </p>
+                            </div>
+                            <div class="replay-like">
+                                <img src="images/like_currt.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="replay-content">
+                        UI设计师
+                    </p>
+                    <p class="replay-pic">
+                        <span></span><span>回复</span>
+                    </p>
+                </div>
+                <div class="replay-list-item">
+                    <div class="replay-list-top">
+                        <img src="images/person.png" alt="">
+                        <div class="replay-xinxi">
+                            <div>
+                                <p><span>众泰集团董事长</span><img src="images/zhi.png" alt=""></p>
+                                <p>2017-08-11 15:10:05</p>
+                            </div>
+                            <div class="replay-like">
+                                <img src="images/like.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="replay-content">
+                        <p>
+                            UI设计师&插画师，与中国银行、北京电视台等都合作，项目包含金融APP设计，插画，绘本，动画人物形象设计等等。
+                        </p>
+                        <div class="repaly">
+                            <p><span>Daniel</span>&nbsp;回复&nbsp;<span>zhi_1500214799</span>:&nbsp;众泰公司专业模仿三十年，哈哈
+                            </p>
+                            <p><span>众泰集团皮尺部部长</span>&nbsp;回复&nbsp;<span>zhi_1500214799</span>:&nbsp;模仿的像就行了，管他真假呢
+                            </p>
+                        </div>
+                    </div>
+                    <p class="replay-pic">
+                        <span></span><span>回复</span>
+                    </p>
+                </div>
+                <div class="replay-list-item">
+                    <div class="replay-list-top">
+                        <img src="images/person.png" alt="">
+                        <div class="replay-xinxi">
+                            <div>
+                                <p><span>众泰集团董事长</span><img src="images/zhi.png" alt=""></p>
+                                <p>2017-08-11 15:10:05</p>
+                            </div>
+                            <div class="replay-like">
+                                <img src="images/like_currt.png" alt="">
+                                <span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="replay-content">
+                        UI设计师&插画师，与中国银行、北京电视台等都合作，项目包含金融APP设计，插画，绘本，动画人物形象设计等等。
+                    </p>
+                    <p class="replay-pic">
+                        <span></span><span>回复</span>
+                    </p>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </div>
+    </div>
+    <!--底部浮层-->
+    
+   
+    <div class="bottom_layer">
+        <div class="bottom-commit">
+            <input type="text" placeholder="写评论">
+            <i></i>
+        </div>
+        <div class="bottom_layer-right">
+            <p><img src="images/msg_b.png" alt="" class="comment-pic"><span>4</span></p>
+            <p><img src="images/zan.png" alt="" class="zan-pic"></p>
+            <p><img src="images/sc.png" alt="" class="sc-pic"></p>
+        </div>
+    </div>
+    <!-- <div id="zhanwei" style="width: 100%;height: 1rem"></div> -->
+ <!--    <div class="commit-bg">
+        <p>
+            <textarea name="" id="" autofocus="autofocus"></textarea>
+        </p>
+        <p>
+            <button>发布</button>
+        </p>
+    </div> -->
+
+    <div class="commit-bg1">
+        <div>
+            <button>取消</button>
+            <button>发布</button>
+        </div>
+
+        <textarea name="" id="" autofocus="autofocus"></textarea>
+    </div>
+    
+</body>
+
+</html>

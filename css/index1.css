@@ -1,0 +1,461 @@
+a{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+.w700 {
+    width: 7.0rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+/* index.html  list */
+
+.list-layout {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0.4rem 0;
+    height: 2.6rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.list-layout .list-layout-left {
+    display: inline-block;
+    position: relative;
+    width: 4.4rem;
+    height: 1.8rem;
+}
+
+.list-layout .list-layout-left .title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 0.3rem;
+}
+
+.list-layout .list-layout-left .time {
+    position: absolute;
+    left: 0rem;
+    bottom: 0rem;
+    font-size: 0.22rem;
+    line-height: 0.3rem;
+    color: #646464;
+}
+
+.list-layout .list-layout-left .time span:nth-child(1) {
+    width: .3rem;
+    height: .3rem;
+    display: block;
+    float: left;
+    background: url(../images/time.png) no-repeat left;
+    background-size: .20rem .20rem
+}
+
+.list-layout .list-layout-right {
+    float: right;
+    box-sizing: border-box;
+    width: 2.58rem;
+    height: 1.8rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.list-layout .list-layout-right>img {
+    // width: 2.58rem;
+    height: 1.8rem;
+    margin-left: -0.5rem;
+}
+
+.play {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../images/play.png) no-repeat center;
+    background-size: 0.84rem 0.84rem;
+}
+
+
+
+
+
+/* detail.html */
+.detail {
+    margin: 0.24rem auto 0 auto;
+    width:7.5rem;
+    // position: absolute;
+    // top: 0;
+    // bottom: 1rem;
+    
+    // overflow: auto;
+    // -webkit-overflow-scrolling: touch;
+}
+
+.detail h3 {
+    font-size: .42rem;
+    font-weight: bold;
+}
+
+.time-see {
+    font-size: 0.22rem;
+    color: #616161;
+    margin: 0.3rem 0;
+    height: 0.3rem;
+}
+
+.time-see li:nth-child(1) {
+    float: left;
+}
+
+.time-see li:nth-child(2) {
+    float: right;
+}
+
+.time-see li:nth-child(2) span:nth-child(1) {
+    width: 0.5rem;
+    height: 0.3rem;
+    float: left;
+    display: block;
+    background: url(../images/video_eye.png) no-repeat center;
+    background-size: .26rem .20rem;
+}
+
+.datail-bg {
+    padding-top: 0.7rem;
+    width: 100%;
+}
+
+.datail-bg div:nth-child(1) {
+    width: 1.04rem;
+    height: 1.03rem;
+    margin: auto;
+    background: url(../images/zx_pic.png) no-repeat center;
+    background-size: 100%;
+}
+
+.datail-bg div:nth-child(2) {
+    font-weight: bold;
+    font-size: .3rem;
+    text-align: center;
+    padding: .1rem 0 .3rem 0;
+}
+
+.datail-bg div:nth-child(3) {
+    text-align: center;
+    width: 100%;
+    height: 1px;
+    background: #dbdbdb;
+    font-size: .24rem;
+}
+
+.datail-bg div:nth-child(3) span {
+    position: relative;
+    top: -.15rem;
+    background: #fff;
+    padding: 0 .2rem;
+    color: #b4b4b4;
+}
+
+.datail-bg div:nth-child(4) {
+    width: 100%;
+    height: .24rem;
+    background: #f3f3f7;
+    margin-top: .64rem;
+    margin-bottom: .25rem;
+}
+
+.all-say {
+    width: 100%;
+}
+
+.all-say h2 {
+    font-size: 0.28rem;
+    font-weight: bold;
+}
+
+.all-say h2 p {
+    width: .09rem;
+    height: .34rem;
+    float: left;
+    background: #1a0606;
+    margin-right: .2rem;
+}
+
+.replay-list {
+    box-sizing: border-box;
+    width: 7.5rem;
+    height: auto; 
+}
+.replay-list-item {
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid #eeeeee;
+    float: left;
+    padding: 0.3rem 0.3rem 0.2rem 0.2rem;
+}
+.replay-list-item:last-of-type {
+    margin-bottom: 1rem;
+}
+.replay-list-top {
+    width: 100%;
+    height: .9rem;
+    font-size: .24rem;
+}
+.replay-list-top>img {
+    float: left;
+    width: 0.9rem;
+    height: 0.9rem;
+}
+.replay-list-top .replay-xinxi {
+    width: 5.5rem;
+    height: 0.9rem;
+    float: left;
+    margin-left: 0.3rem;
+    position: relative;
+}
+.replay-list-top .replay-xinxi div {
+    float: left;
+}
+.replay-list-top .replay-xinxi div p:first-of-type {
+    font-size: 0.28rem;
+    font-weight: bold;
+    line-height: 0.5rem;
+}
+.replay-list-top .replay-xinxi div p:first-of-type span {
+    vertical-align: middle;
+}
+.replay-list-top .replay-xinxi div p:first-of-type img {
+    vertical-align: middle;
+    margin-left: 0.1rem;
+    width: 0.35rem;
+    height: 0.31rem;
+}
+.replay-list-top .replay-xinxi div p:last-of-type {
+    font-size: 0.26rem;
+    color: #b4b4b4;
+    margin-top: 0.1rem;
+}
+.replay-list-top .replay-xinxi .replay-like {
+    position: absolute;
+    bottom: 0.1rem;
+    right: 0.1rem;
+}
+.replay-list-top .replay-xinxi .replay-like img {
+    width: 0.33rem;
+    height: 0.3rem;
+    vertical-align: middle;
+}
+.replay-list-top .replay-xinxi .replay-like span {
+    vertical-align: middle;
+}
+.replay-content {
+    margin: 0.2rem 0 0.2rem 1.2rem;
+    color: #646464;
+}
+.replay-pic {
+    float: right;
+    margin-right: 0.1rem;
+}
+.replay-pic span:first-of-type {
+    width: .5rem;
+    height: .35rem;
+    display: block;
+    float: left;
+    background: url(../images/msg_x.png) no-repeat center;
+    background-size: .32rem .31rem;
+}
+.replay-content .repaly {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 0.2rem;
+    background: #F7F7F7;
+    padding: .2rem;
+    font-size: .26rem;
+    line-height: .4rem;
+    color: #646464;
+}
+.replay-content .repaly p span {
+    color: #4782DB;
+}
+
+
+// 相关阅读
+.articles {
+    width: 100%;
+}
+
+.articles h2 {
+    font-size: 0.28rem;
+    font-weight: bold;
+}
+
+.articles h2 p {
+    width: .09rem;
+    height: .34rem;
+    float: left;
+    background: #1a0606;
+    margin-right: .2rem;
+}
+.articles .list-layout:last-of-type {
+    border:none;
+}
+.articles-border{
+    width: 100%;
+    height: .24rem;
+    background: #f3f3f7;
+    margin-bottom: .3rem;
+}
+
+
+
+
+
+
+
+/* 底部评论 */
+.bottom_layer {
+    position: fixed;
+    bottom: 0;
+    width: 7.5rem;
+    height: 1rem;
+    margin: auto;
+   
+    background: #fafbfd;
+    border-top: 1px solid #c8c8c8;
+    font-size: .24rem;
+    line-height: 1rem;
+}
+.bottom-commit{
+    float: left;
+    width: 4.5rem;
+    height: 1rem;
+}
+.bottom-commit input{
+    position: relative;
+    box-sizing: border-box;
+    width: 4rem;
+    height: 0.6rem;
+    border:1px solid #ccc;
+    border-radius: 0.3rem;
+    margin: 0.15rem 0 0 0.4rem;
+    padding: 0 0.6rem;
+    -webkit-appearance: none;
+}
+.bottom-commit i{
+    display: inline-block;
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 0.4rem;
+    left: 0.6rem;
+    line-height: 0.6rem;
+    background: url(../images/msg_x.png) no-repeat center;
+    background-size:100%;
+}
+.bottom_layer-right{
+    float: right;
+    width: 2.5rem;
+    margin-left: 0.5rem;
+}
+.bottom_layer-right p{
+    width: 0.75rem;
+    height: 1rem;
+    display: inline-block;
+    position: relative;
+}
+.bottom_layer-right p span{
+    display: inline-block;
+    position: absolute;
+    top: 0.25rem;
+    right: 0.1rem;
+    min-width: 0.3rem; 
+    background-color: red;
+    line-height: 0.35rem;
+    padding: 0 0.1rem;
+    border-radius: 0.15rem;
+    font-size: 0.2rem;
+    color: #fff;
+    text-align: center;
+    -webkit-transform: scale(0.8);
+}
+
+.bottom_layer-right p img{
+    width: 0.4rem;
+    vertical-align: middle;
+}
+.commit-bg{
+    // display: none;
+    width: 7.5rem;
+    height: 2rem;
+    margin: 0 auto;
+
+
+    background-color: #fff;
+    border-top: 1px solid #c8c8c8;
+}
+.commit-bg p{
+    float: left;
+    height: 2rem;
+}
+.commit-bg textarea{
+    width: 5rem;
+    min-height: 0.5rem;
+    max-height: 1rem;
+    padding: 0.1rem 0.2rem;
+    margin: 0.4rem 0 0 0.4rem;
+    background-color: #f7f8f9;
+    font-size: 0.3rem;
+    border:1px solid #c8c8c8;
+    -webkit-appearance: none;
+}
+.commit-bg button{
+    font-size: 0.3rem;
+    margin: 0.65rem 0 0 0.4rem;
+    border: 1px solid #c8c8c8;
+    width: 1rem;
+    background-color: #fff;
+    color: #141414;
+    border-radius: 0.15rem;
+
+}
+
+
+
+.commit-bg1{
+    display: none;
+    width: 7.5rem;
+    height: 5rem;
+    margin: 0 auto;
+
+
+    background-color: #fff;
+    border-top: 1px solid #c8c8c8;
+}
+
+.commit-bg1 textarea{
+
+    box-sizing: border-box;
+    width: 7rem;
+    min-height: 0.5rem;
+    max-height: 1rem;
+    padding: 0.1rem 0.2rem;
+    margin: 0 auto;
+    background-color: #f7f8f9;
+    font-size: 0.3rem;
+    border:1px solid #c8c8c8;
+    -webkit-appearance: none;
+}
+.commit-bg1 button{
+    font-size: 0.3rem;
+    margin: 0.65rem 0 0 0.4rem;
+    border: 1px solid #c8c8c8;
+    width: 1rem;
+    background-color: #fff;
+    color: #141414;
+    border-radius: 0.15rem;
+
+}
